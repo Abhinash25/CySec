@@ -1,0 +1,40 @@
+id: hash-identifier
+name: hash-identifier
+display_name: Hash-identifier
+
+aliases:
+  - hash-identifier
+
+categories:
+  - Password / Credential Auditing
+
+description: "TBD"
+
+install_class: PREINSTALLED
+runtime_requirements:
+  - python3
+
+profiles:
+  - full
+
+installation_method: PYTHON_PACKAGE
+installer_adapter: python
+
+entry_command: hash-identifier
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

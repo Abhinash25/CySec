@@ -1,0 +1,65 @@
+id: subfinder
+name: subfinder
+display_name: Subfinder
+
+aliases:
+  - subfinder
+
+categories:
+  - Reconnaissance
+  - Information Gathering
+
+description: "Fast passive subdomain enumeration tool. Discovers subdomains using passive online sources."
+
+official_website: "https://projectdiscovery.io"
+official_repository: "https://github.com/projectdiscovery/subfinder"
+official_release_source: "https://github.com/projectdiscovery/subfinder/releases"
+
+license: "MIT"
+
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.7/subfinder_2.6.7_windows_amd64.zip"
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.7/subfinder_2.6.7_linux_amd64.zip"
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.7/subfinder_2.6.7_macOS_amd64.zip"
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.7/subfinder_2.6.7_macOS_arm64.zip"
+
+architectures:
+  - amd64
+  - arm64
+
+installation_method: GO_MODULE
+installer_adapter: go_module
+
+entry_command: subfinder
+
+dependencies: []
+
+profiles:
+  - full
+version: "latest"
+version_policy: "stable"
+
+verification_status: OFFICIAL_VERIFIED
+tool_status: VALIDATED
+
+estimated_download_size: "15 MB"
+estimated_installed_size: "25 MB"
+
+last_verified: "2025-01-01"
+
+deprecated: false
+
+adapter_config:
+  go_module: "github.com/projectdiscovery/subfinder/v2/cmd/subfinder"

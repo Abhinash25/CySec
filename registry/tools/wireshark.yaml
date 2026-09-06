@@ -1,0 +1,33 @@
+id: wireshark
+name: "Wireshark"
+display_name: "Wireshark"
+categories: ["Network"]
+description: "Network protocol analyzer"
+official_website: "https://www.wireshark.org"
+repository_url: "https://gitlab.com/wireshark/wireshark"
+installation_method: "SYSTEM_WRAPPER"
+installer_adapter: "system_wrapper"
+entry_command: "wireshark"
+interface_type: "gui"
+profiles:
+  - full
+version: "system"
+tool_status: "VALIDATED"
+platforms:
+  - os: "windows"
+    arch: "amd64"
+    support: "SUPPORTED"
+  - os: "linux"
+    arch: "amd64"
+    support: "SUPPORTED"
+  - os: "darwin"
+    arch: "amd64"
+    support: "SUPPORTED"
+  - os: "darwin"
+    arch: "arm64"
+    support: "SUPPORTED"
+host_prerequisites:
+  - name: "wireshark"
+    description: "Wireshark system installation is required"
+    command: "wireshark --version"
+    mandatory: true

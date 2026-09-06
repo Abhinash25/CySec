@@ -1,0 +1,25 @@
+id: kiterunner
+name: kiterunner
+display_name: Kiterunner
+description: "Contextual Payload Discovery Tool for APIs"
+profiles:
+  - full
+categories:
+  - API Security
+  - Fuzzing
+aliases:
+  - kr
+official_repository: "https://github.com/assetnote/kiterunner"
+license: "MIT"
+installation_method: "GO_MODULE"
+installer_adapter: "go_module"
+entry_command: "kr"
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED

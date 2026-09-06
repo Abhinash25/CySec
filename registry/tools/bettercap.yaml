@@ -1,0 +1,28 @@
+id: bettercap
+name: "Bettercap"
+display_name: "Bettercap"
+categories: ["Network"]
+description: "The Swiss Army knife for 802.11, BLE, IPv4 and IPv6 networks reconnaissance and MITM attacks."
+official_website: "https://www.bettercap.org/"
+installation_method: "OFFICIAL_BINARY"
+installer_adapter: "binary"
+entry_command: "bettercap"
+interface_type: "cli"
+profiles:
+  - full
+version: "2.32.0"
+tool_status: "VALIDATED"
+platforms:
+  - os: "windows"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/bettercap/bettercap/releases/download/v2.32.0/bettercap_windows_amd64_v2.32.0.zip"
+  - os: "linux"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/bettercap/bettercap/releases/download/v2.32.0/bettercap_linux_amd64_v2.32.0.zip"
+  - os: "darwin"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/bettercap/bettercap/releases/download/v2.32.0/bettercap_darwin_amd64_v2.32.0.zip"
+host_prerequisites: []

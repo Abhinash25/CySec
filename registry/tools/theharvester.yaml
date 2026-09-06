@@ -1,0 +1,25 @@
+id: theharvester
+name: theHarvester
+display_name: theHarvester
+description: "E-mails, subdomains and names OSINT tool"
+categories:
+  - OSINT
+  - Reconnaissance
+aliases:
+  - harvester
+official_repository: "https://github.com/laramies/theHarvester"
+license: "GPL-2.0"
+installation_method: "PYTHON_PACKAGE"
+installer_adapter: "python"
+entry_command: "theHarvester"
+profiles:
+  - full
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED

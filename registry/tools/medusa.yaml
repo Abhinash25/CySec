@@ -1,0 +1,38 @@
+id: medusa
+name: medusa
+display_name: Medusa
+
+aliases:
+  - medusa
+
+categories:
+  - Password / Credential Auditing
+
+description: "TBD"
+
+install_class: PLATFORM_SPECIFIC
+
+profiles:
+  - full
+
+installation_method: SYSTEM_PACKAGE
+installer_adapter: system_wrapper
+
+entry_command: medusa
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

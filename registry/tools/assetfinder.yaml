@@ -1,0 +1,31 @@
+id: assetfinder
+name: assetfinder
+display_name: Assetfinder
+description: "Find domains and subdomains related to a given domain."
+categories:
+  - Reconnaissance
+  - Domain Discovery
+aliases:
+  - asset
+official_repository: "https://github.com/tomnomnom/assetfinder"
+license: "MIT"
+installation_method: "GO_MODULE"
+installer_adapter: "go_module"
+entry_command: "assetfinder"
+profiles:
+  - full
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED

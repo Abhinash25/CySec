@@ -1,0 +1,61 @@
+id: python
+name: python
+display_name: Python
+
+aliases:
+  - python3
+  - python
+  - pip
+
+profiles:
+  - full
+  - core
+  - development
+  - Utilities
+
+categories:
+  - Development
+  - Utilities
+
+description: "Python programming language runtime. Required by many cybersecurity tools and scripts."
+
+official_website: "https://www.python.org"
+official_repository: "https://github.com/python/cpython"
+official_release_source: "https://www.python.org/downloads/"
+
+license: "PSF-2.0"
+
+platforms:
+  - os: windows
+    support: SUPPORTED
+    notes: "Download from python.org or Microsoft Store"
+  - os: linux
+    support: SUPPORTED
+    notes: "Usually pre-installed or via system package manager"
+  - os: darwin
+    support: SUPPORTED
+    notes: "Available via Homebrew or python.org"
+
+architectures:
+  - amd64
+  - arm64
+
+installation_method: SYSTEM_PACKAGE
+installer_adapter: binary
+
+entry_command: python
+
+dependencies: []
+
+version: "3.12"
+version_policy: "stable"
+
+verification_status: OFFICIAL_VERIFIED
+tool_status: SUPPORTED
+
+estimated_download_size: "30 MB"
+estimated_installed_size: "150 MB"
+
+last_verified: "2025-01-01"
+
+deprecated: false

@@ -1,0 +1,39 @@
+id: trivy
+name: trivy
+display_name: Trivy
+
+aliases:
+  - trivy
+
+categories:
+  - Container / Kubernetes Security
+
+description: "TBD"
+
+install_class: PREINSTALLED
+
+profiles:
+  - full
+
+installation_method: OFFICIAL_BINARY
+installer_adapter: binary
+
+entry_command: trivy
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+    download_url: "https://github.com/aquasecurity/trivy/releases/download/v0.55.0/trivy_0.55.0_windows-64bit.zip"
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

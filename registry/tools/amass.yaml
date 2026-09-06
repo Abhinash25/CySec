@@ -1,0 +1,31 @@
+id: amass
+name: amass
+display_name: OWASP Amass
+categories:
+  - Enumeration
+  - OSINT
+description: In-depth Attack Surface Mapping and Asset Discovery
+aliases:
+  - amass
+official_website: https://github.com/owasp-amass/amass
+official_repository: https://github.com/owasp-amass/amass
+official_release_source: github
+license: Apache-2.0
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED
+installation_method: GO_MODULE
+installer_adapter: go_module
+entry_command: amass
+adapter_config:
+  go_module: "github.com/owasp-amass/amass/v4/...@master"
+profiles:
+  - full
+version: latest
+version_policy: latest
+verification_status: OFFICIAL_VERIFIED
+tool_status: DRAFT

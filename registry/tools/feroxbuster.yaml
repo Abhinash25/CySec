@@ -1,0 +1,31 @@
+id: feroxbuster
+name: feroxbuster
+display_name: Feroxbuster
+description: "A fast, simple, recursive content discovery tool written in Rust."
+categories:
+  - Web Security
+  - Fuzzing
+aliases:
+  - ferox
+official_repository: "https://github.com/epi052/feroxbuster"
+license: "MIT"
+installation_method: "OFFICIAL_BINARY"
+installer_adapter: "binary"
+entry_command: "feroxbuster"
+profiles:
+  - full
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/epi052/feroxbuster/releases/latest/download/x86_64-windows-feroxbuster.zip.zip"
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/epi052/feroxbuster/releases/latest/download/x86_64-linux-feroxbuster.zip"
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/epi052/feroxbuster/releases/latest/download/x86_64-macos-feroxbuster.zip"

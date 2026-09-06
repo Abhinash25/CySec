@@ -1,0 +1,25 @@
+id: spiderfoot
+name: SpiderFoot
+display_name: SpiderFoot
+description: "SpiderFoot is an OSINT automation tool."
+profiles:
+  - full
+categories:
+  - OSINT
+  - Reconnaissance
+aliases:
+  - sf
+official_repository: "https://github.com/smicallef/spiderfoot"
+license: "MIT"
+installation_method: "PYTHON_PACKAGE"
+installer_adapter: "python"
+entry_command: "sf"
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED

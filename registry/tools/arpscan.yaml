@@ -1,0 +1,38 @@
+id: arpscan
+name: arp-scan
+display_name: ARP-Scan
+
+aliases:
+  - arp-scan
+
+categories:
+  - Network Discovery & Scanning
+
+description: "TBD"
+
+install_class: PLATFORM_SPECIFIC
+
+profiles:
+  - full
+
+installation_method: SYSTEM_PACKAGE
+installer_adapter: system_wrapper
+
+entry_command: arp-scan
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

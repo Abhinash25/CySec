@@ -1,0 +1,38 @@
+id: openssl
+name: openssl
+display_name: OpenSSL
+
+aliases:
+  - openssl
+
+categories:
+  - Security Analysis / Utilities
+
+description: "TBD"
+
+install_class: SYSTEM_INTEGRATED
+
+profiles:
+  - full
+
+installation_method: SYSTEM_PACKAGE
+installer_adapter: system_wrapper
+
+entry_command: openssl
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

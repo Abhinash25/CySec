@@ -1,0 +1,32 @@
+id: sqlmap
+name: sqlmap
+display_name: SQLMap
+categories:
+  - Database Assessment
+  - Web Application Security
+description: Automatic SQL injection and database takeover tool
+aliases:
+  - sqlmap
+official_website: https://sqlmap.org/
+official_repository: https://github.com/sqlmapproject/sqlmap
+official_release_source: pypi
+license: GPL-2.0
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED
+installation_method: PYTHON_PACKAGE
+installer_adapter: python
+entry_command: sqlmap
+adapter_config:
+  pip_package: sqlmap
+  python_module: sqlmap
+profiles:
+  - full
+version: latest
+version_policy: latest
+verification_status: OFFICIAL_VERIFIED
+tool_status: SUPPORTED

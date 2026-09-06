@@ -1,0 +1,26 @@
+id: netcat
+name: "Netcat"
+display_name: "Netcat"
+categories: ["Network"]
+description: "Networking utility which reads and writes data across network connections"
+official_website: "http://netcat.sourceforge.net/"
+installation_method: "SYSTEM_WRAPPER"
+installer_adapter: "system_wrapper"
+entry_command: "nc"
+interface_type: "cli"
+profiles:
+  - full
+version: "system"
+tool_status: "VALIDATED"
+platforms:
+  - os: "linux"
+    arch: "amd64"
+    support: "SUPPORTED"
+  - os: "darwin"
+    arch: "amd64"
+    support: "SUPPORTED"
+host_prerequisites:
+  - name: "netcat"
+    description: "Netcat (nc) system installation is required"
+    command: "nc -h"
+    mandatory: true

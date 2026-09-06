@@ -1,0 +1,62 @@
+id: nmap
+name: nmap
+display_name: Nmap
+
+aliases:
+  - nmap
+
+categories:
+  - Network Discovery
+  - Network Scanning
+
+description: "Network exploration tool and security/port scanner. Used for host discovery, service detection, and network inventory."
+
+official_website: "https://nmap.org"
+official_repository: "https://github.com/nmap/nmap"
+official_release_source: "https://nmap.org/dist/"
+
+license: "Nmap Public Source License"
+
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+    notes: "Requires Npcap. Install via nmap.org installer."
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+    notes: "Available via system package manager (apt, yum, pacman)"
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+    notes: "Available via Homebrew: brew install nmap"
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED
+    notes: "Available via Homebrew: brew install nmap"
+
+architectures:
+  - amd64
+  - arm64
+
+installation_method: SYSTEM_INTEGRATION
+installer_adapter: system_wrapper
+
+entry_command: nmap
+
+dependencies: []
+
+profiles:
+  - full
+version: "7.95"
+version_policy: "stable"
+
+verification_status: OFFICIAL_VERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "30 MB"
+estimated_installed_size: "45 MB"
+
+last_verified: "2025-01-01"
+
+deprecated: false

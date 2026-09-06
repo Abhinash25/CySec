@@ -1,0 +1,24 @@
+id: hashcat
+name: "Hashcat"
+display_name: "Hashcat"
+categories: ["Cracking"]
+description: "World's fastest and most advanced password recovery utility"
+official_website: "https://hashcat.net/"
+installation_method: "OFFICIAL_BINARY"
+installer_adapter: "binary"
+entry_command: "hashcat"
+interface_type: "cli"
+profiles:
+  - full
+version: "6.2.6"
+tool_status: "VALIDATED"
+platforms:
+  - os: "windows"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/hashcat/hashcat/releases/download/v6.2.6/hashcat-6.2.6.7z"
+  - os: "linux"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/hashcat/hashcat/releases/download/v6.2.6/hashcat-6.2.6.7z"
+host_prerequisites: []

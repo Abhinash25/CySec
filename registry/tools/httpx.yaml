@@ -1,0 +1,31 @@
+id: httpx
+name: httpx
+display_name: HTTPX
+description: "httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library."
+categories:
+  - Network Analysis
+  - Reconnaissance
+aliases:
+  - httpx-toolkit
+official_repository: "https://github.com/projectdiscovery/httpx"
+license: "MIT"
+installation_method: "GO_MODULE"
+installer_adapter: "go_module"
+entry_command: "httpx"
+profiles:
+  - full
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED

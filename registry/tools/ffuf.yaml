@@ -1,0 +1,65 @@
+id: ffuf
+name: ffuf
+display_name: ffuf
+
+aliases:
+  - ffuf
+
+categories:
+  - Web Application Security
+  - Reconnaissance
+
+description: "Fast web fuzzer for content discovery, virtual host discovery, and parameter fuzzing."
+
+official_website: "https://github.com/ffuf/ffuf"
+official_repository: "https://github.com/ffuf/ffuf"
+official_release_source: "https://github.com/ffuf/ffuf/releases"
+
+license: "MIT"
+
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/ffuf/ffuf/releases/download/v2.1.0/ffuf_2.1.0_windows_amd64.zip"
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/ffuf/ffuf/releases/download/v2.1.0/ffuf_2.1.0_linux_amd64.tar.gz"
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/ffuf/ffuf/releases/download/v2.1.0/ffuf_2.1.0_macOS_amd64.tar.gz"
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED
+    download_url: "https://github.com/ffuf/ffuf/releases/download/v2.1.0/ffuf_2.1.0_macOS_arm64.tar.gz"
+
+architectures:
+  - amd64
+  - arm64
+
+installation_method: GO_MODULE
+installer_adapter: go_module
+
+entry_command: ffuf
+
+dependencies: []
+
+profiles:
+  - full
+version: "v2.1.0"
+version_policy: "stable"
+
+verification_status: OFFICIAL_VERIFIED
+tool_status: SUPPORTED
+
+estimated_download_size: "8 MB"
+estimated_installed_size: "12 MB"
+
+last_verified: "2025-01-01"
+
+deprecated: false
+
+adapter_config:
+  go_module: "github.com/ffuf/ffuf/v2"

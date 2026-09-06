@@ -1,0 +1,38 @@
+id: radare2
+name: r2
+display_name: Radare2
+
+aliases:
+  - r2
+
+categories:
+  - Reverse Engineering
+
+description: "TBD"
+
+install_class: PREINSTALLED
+
+profiles:
+  - full
+
+installation_method: OFFICIAL_BINARY
+installer_adapter: binary
+
+entry_command: r2
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

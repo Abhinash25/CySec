@@ -1,0 +1,55 @@
+id: git
+name: git
+display_name: Git
+
+aliases:
+  - git
+
+profiles:
+  - full
+categories:
+  - Development
+  - Utilities
+
+description: "Distributed version control system. Essential for cloning repositories and managing source code."
+
+official_website: "https://git-scm.com"
+official_repository: "https://github.com/git/git"
+official_release_source: "https://git-scm.com/downloads"
+
+license: "GPL-2.0"
+
+platforms:
+  - os: windows
+    support: SUPPORTED
+    notes: "Typically pre-installed or available via Git for Windows"
+  - os: linux
+    support: SUPPORTED
+    notes: "Available via system package manager"
+  - os: darwin
+    support: SUPPORTED
+    notes: "Included with Xcode Command Line Tools"
+
+architectures:
+  - amd64
+  - arm64
+
+installation_method: SYSTEM_PACKAGE
+installer_adapter: binary
+
+entry_command: git
+
+dependencies: []
+
+version: "2.45"
+version_policy: "stable"
+
+verification_status: OFFICIAL_VERIFIED
+tool_status: SUPPORTED
+
+estimated_download_size: "50 MB"
+estimated_installed_size: "300 MB"
+
+last_verified: "2025-01-01"
+
+deprecated: false

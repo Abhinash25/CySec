@@ -1,0 +1,38 @@
+id: rustscan
+name: rustscan
+display_name: RustScan
+
+aliases:
+  - rustscan
+
+categories:
+  - Network Discovery & Scanning
+
+description: "TBD"
+
+install_class: PREINSTALLED
+
+profiles:
+  - full
+
+installation_method: OFFICIAL_BINARY
+installer_adapter: binary
+
+entry_command: rustscan
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

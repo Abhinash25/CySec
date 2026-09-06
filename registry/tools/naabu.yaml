@@ -1,0 +1,31 @@
+id: naabu
+name: naabu
+display_name: Naabu
+description: "A fast port scanner written in go with a focus on reliability and simplicity."
+categories:
+  - Network Analysis
+  - Port Scanning
+aliases:
+  - portscanner
+official_repository: "https://github.com/projectdiscovery/naabu"
+license: "MIT"
+installation_method: "GO_MODULE"
+installer_adapter: "go_module"
+entry_command: "naabu"
+profiles:
+  - full
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED

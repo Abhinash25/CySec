@@ -1,0 +1,40 @@
+id: stegsolve
+name: stegsolve
+display_name: Stegsolve
+
+aliases:
+  - stegsolve
+
+categories:
+  - Security Analysis / Utilities
+
+description: "TBD"
+
+install_class: REGISTRY_ONLY
+runtime_requirements:
+  - java17
+
+profiles:
+  - full
+
+installation_method: OFFICIAL_BINARY
+installer_adapter: binary
+
+entry_command: stegsolve
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

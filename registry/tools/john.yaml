@@ -1,0 +1,29 @@
+id: john
+name: "John the Ripper"
+display_name: "John the Ripper"
+categories: ["Cracking"]
+description: "Advanced password cracker"
+official_website: "https://www.openwall.com/john/"
+installation_method: "SYSTEM_WRAPPER"
+installer_adapter: "system_wrapper"
+entry_command: "john"
+interface_type: "cli"
+profiles:
+  - full
+version: "system"
+tool_status: "VALIDATED"
+platforms:
+  - os: "windows"
+    arch: "amd64"
+    support: "SUPPORTED"
+  - os: "linux"
+    arch: "amd64"
+    support: "SUPPORTED"
+  - os: "darwin"
+    arch: "amd64"
+    support: "SUPPORTED"
+host_prerequisites:
+  - name: "john"
+    description: "John the Ripper system installation is required"
+    command: "john"
+    mandatory: true

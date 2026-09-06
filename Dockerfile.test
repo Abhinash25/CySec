@@ -1,0 +1,36 @@
+FROM golang:1.24-alpine
+
+RUN apk add --no-cache bash python3 curl build-base
+
+WORKDIR /app
+
+# Copy the CySec source code
+COPY . .
+
+# Build the Linux binary
+RUN go build -o cysec ./cmd/cysec
+
+# Test environment startup
+RUN ./cysec --version
+
+# Test Go Module installation (gobuster)
+RUN ./cysec install gobuster -y
+
+# Test Python installation (sqlmap)
+RUN ./cysec install sqlmap -y
+
+# Test Binary installation (nuclei)
+RUN ./cysec install nuclei -y
+
+# Test Execution (Interactive execution inside managed env)
+# We can test by echoing the command to cysec
+RUN echo "gobuster --version" | ./cysec
+RUN echo "sqlmap --version" | ./cysec
+RUN echo "nuclei -version" | ./cysec
+
+# Test Uninstall
+RUN ./cysec uninstall gobuster -y
+RUN ./cysec uninstall sqlmap -y
+RUN ./cysec uninstall nuclei -y
+
+CMD ["echo", "Linux Container Verification Successful!"]

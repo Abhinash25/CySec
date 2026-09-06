@@ -1,0 +1,66 @@
+id: nuclei
+name: nuclei
+display_name: Nuclei
+
+aliases:
+  - nuclei
+
+categories:
+  - Web Application Security
+  - Vulnerability Assessment
+
+description: "Fast, template-based vulnerability scanner. Uses community and custom templates for targeted scanning."
+
+official_website: "https://nuclei.projectdiscovery.io"
+official_repository: "https://github.com/projectdiscovery/nuclei"
+official_release_source: "https://github.com/projectdiscovery/nuclei/releases"
+
+license: "MIT"
+
+platforms:
+  - os: windows
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/nuclei/releases/download/v3.3.7/nuclei_3.3.7_windows_amd64.zip"
+    checksum_url: "https://github.com/projectdiscovery/nuclei/releases/download/v3.3.7/nuclei_3.3.7_checksums.txt"
+  - os: linux
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/nuclei/releases/download/v3.3.7/nuclei_3.3.7_linux_amd64.zip"
+  - os: darwin
+    arch: amd64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/nuclei/releases/download/v3.3.7/nuclei_3.3.7_macOS_amd64.zip"
+  - os: darwin
+    arch: arm64
+    support: SUPPORTED
+    download_url: "https://github.com/projectdiscovery/nuclei/releases/download/v3.3.7/nuclei_3.3.7_macOS_arm64.zip"
+
+architectures:
+  - amd64
+  - arm64
+
+installation_method: OFFICIAL_BINARY
+installer_adapter: binary
+
+entry_command: nuclei
+
+dependencies: []
+
+profiles:
+  - full
+version: "3.3.7"
+version_policy: "stable"
+
+verification_status: OFFICIAL_VERIFIED
+tool_status: SUPPORTED
+
+estimated_download_size: "25 MB"
+estimated_installed_size: "40 MB"
+
+last_verified: "2025-01-01"
+
+deprecated: false
+
+adapter_config:
+  go_module: "github.com/projectdiscovery/nuclei/v3/cmd/nuclei"

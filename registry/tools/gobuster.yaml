@@ -1,0 +1,31 @@
+id: gobuster
+name: gobuster
+display_name: Gobuster
+categories:
+  - Content Discovery
+  - Enumeration
+description: "Directory/File, DNS and VHost busting tool written in Go"
+aliases:
+  - gobuster
+official_website: "https://github.com/OJ/gobuster"
+official_repository: "https://github.com/OJ/gobuster"
+official_release_source: "github"
+license: "Apache-2.0"
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED
+installation_method: GO_MODULE
+installer_adapter: go_module
+entry_command: gobuster
+adapter_config:
+  go_module: "github.com/OJ/gobuster/v3"
+profiles:
+  - full
+version: "latest"
+version_policy: "latest"
+verification_status: OFFICIAL_VERIFIED
+tool_status: SUPPORTED

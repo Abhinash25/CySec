@@ -1,0 +1,40 @@
+id: jq
+name: jq
+display_name: jq
+
+aliases:
+  - jq
+
+categories:
+  - Security Analysis / Utilities
+
+description: "TBD"
+
+install_class: PREINSTALLED
+
+profiles:
+  - full
+  - core
+
+installation_method: OFFICIAL_BINARY
+installer_adapter: binary
+
+entry_command: jq
+
+version: "latest"
+version_policy: "stable"
+
+verification_status: UNVERIFIED
+tool_status: DRAFT
+
+estimated_download_size: "10 MB"
+estimated_installed_size: "25 MB"
+
+platforms:
+  - os: windows
+    support: EXPERIMENTAL
+    download_url: "https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-windows-amd64.exe"
+  - os: linux
+    support: EXPERIMENTAL
+  - os: darwin
+    support: EXPERIMENTAL

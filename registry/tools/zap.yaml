@@ -1,0 +1,32 @@
+id: zap
+name: "OWASP ZAP"
+display_name: "OWASP ZAP"
+categories: ["Web"]
+description: "Web application security scanner"
+official_website: "https://www.zaproxy.org/"
+installation_method: "OFFICIAL_BINARY"
+installer_adapter: "binary"
+entry_command: "zap.bat"
+interface_type: "gui"
+profiles:
+  - full
+version: "2.15.0"
+tool_status: "VALIDATED"
+platforms:
+  - os: "windows"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Crossplatform.zip"
+  - os: "linux"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Crossplatform.zip"
+  - os: "darwin"
+    arch: "amd64"
+    support: "SUPPORTED"
+    download_url: "https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Crossplatform.zip"
+host_prerequisites:
+  - name: "java"
+    description: "Java Runtime Environment 11+ is required for ZAP"
+    command: "java -version"
+    mandatory: true

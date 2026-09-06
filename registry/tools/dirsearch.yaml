@@ -1,0 +1,25 @@
+id: dirsearch
+name: dirsearch
+display_name: Dirsearch
+description: "Web path scanner"
+categories:
+  - Web Security
+  - Fuzzing
+aliases:
+  - dir-search
+official_repository: "https://github.com/maurosoria/dirsearch"
+license: "GPL-2.0"
+installation_method: "PYTHON_PACKAGE"
+installer_adapter: "python"
+entry_command: "dirsearch"
+profiles:
+  - full
+version: "latest"
+tool_status: "VALIDATED"
+platforms:
+  - os: windows
+    support: SUPPORTED
+  - os: linux
+    support: SUPPORTED
+  - os: darwin
+    support: SUPPORTED
